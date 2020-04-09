@@ -2,15 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import moment from 'moment'
 import firebase from 'firebase'
-
-Vue.filter('formatDate', function(value) {
-  if (value) {
-    // return moment(String(value)).format('MM/DD/YYYY hh:mm')
-    return moment.tz(String(value), "MMM Do YYYY hA", "America/Toronto");
-  }
-});
 
 
 
